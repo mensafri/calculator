@@ -5,22 +5,12 @@ import "./App.css";
 function App() {
   const [number, setNumber] = useState("");
 
-  // function handleClick(event) {
-  //   const inputNumber = event.target.textContent;
-  //   if (number === "0") {
-  //     setNumber(inputNumber);
-  //   } else {
-  //     setNumber(number + inputNumber);
-  //   }
-  // }
-
   function clear() {
     setNumber("");
   }
 
   function handleOperators(event) {
     const operators = event.target.textContent;
-    // setNumber(`${number} ${operators} `);
 
     const operatorPattern = /[+\-*/]/;
     if (number === "" && operators === "0") {
@@ -50,16 +40,7 @@ function App() {
 
   function handleEquals() {
     setNumber(eval(number).toString());
-    // setNumber(equals);
   }
-
-  // function handleDecimal() {
-  //   const decimal = number.split(" ");
-  //   const lastNumber = decimal[decimal.length - 1];
-  //   if (!lastNumber.includes(".")) {
-  //     setNumber(number + ".");
-  //   }
-  // }
 
   return (
     <div className="App">
