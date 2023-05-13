@@ -1,0 +1,31 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    font-size: 25px;
+}
+
+#display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#clear {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#equals {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+button {
+    font-size: 25px;
+}
